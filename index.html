@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Éducatif sur le Togo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="flag-container">
+                <div class="flag-stripe"></div>
+                <div class="flag-stripe"></div>
+                <div class="flag-stripe"></div>
+                <div class="flag-stripe"></div>
+                <div class="flag-stripe"></div>
+            </div>
+            <h1>Quiz Éducatif sur le Togo</h1>
+            <p>Testez vos connaissances sur ce magnifique pays d'Afrique de l'Ouest</p>
+        </header>
+        
+        <!-- Écran de sélection du thème -->
+        <section id="themeScreen" class="screen active">
+            <div class="theme-selection">
+                <h2>Choisissez un thème</h2>
+                <div class="themes-container">
+                    <div class="theme-card" data-theme="histoire">
+                        <div class="theme-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="theme-title">Histoire</div>
+                        <p>Découvrez l'histoire fascinante du Togo</p>
+                    </div>
+                    <div class="theme-card" data-theme="geographie">
+                        <div class="theme-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <div class="theme-title">Géographie</div>
+                        <p>Explorez la géographie togolaise</p>
+                    </div>
+                    <div class="theme-card" data-theme="tourisme">
+                        <div class="theme-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="theme-title">Tourisme</div>
+                        <p>Les merveilles touristiques du Togo</p>
+                    </div>
+                    <div class="theme-card" data-theme="sport">
+                        <div class="theme-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="theme-title">Sport</div>
+                        <p>Le sport au Togo</p>
+                    </div>
+                    <div class="theme-card" data-theme="musique">
+                        <div class="theme-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="theme-title">Musique</div>
+                        <p>La scène musicale togolaise</p>
+                    </div>
+                </div>
+                <div class="navigation" style="justify-content: center; margin-top: 40px;">
+                    <button id="startQuizBtn" class="btn btn-accent">
+                        <i class="fas fa-play"></i> Commencer le Quiz
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Écran du quiz -->
+        <section id="quizScreen" class="screen">
+            <div class="quiz-header">
+                <div class="question-count">Question <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span></div>
+                <div class="stats">
+                    <div class="score-container">
+                        <i class="fas fa-star"></i>
+                        <span>Score: <span id="score">0</span></span>
+                    </div>
+                    <div class="timer-container">
+                        <i class="fas fa-clock"></i>
+                        <span id="timer">10</span>s
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-text" id="questionText">Quelle est la capitale du Togo?</div>
+            </div>
+            
+            <div class="options-container" id="optionsContainer">
+                <!-- Les options seront ajoutées dynamiquement -->
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="navigation">
+                <button id="prevBtn" class="btn btn-secondary" disabled>
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button id="nextBtn" class="btn btn-primary">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Écran des résultats -->
+        <section id="resultsScreen" class="screen">
+            <div class="results-container">
+                <h2>Résultats du Quiz</h2>
+                <div class="score-display"><span id="finalScore">7</span>/<span id="maxScore">10</span></div>
+                <div class="score-message" id="scoreMessage">Excellent travail!</div>
+                
+                <div class="results-details" id="resultsDetails">
+                    <!-- Détails des résultats -->
+                </div>
+                
+                <div class="navigation" style="justify-content: center;">
+                    <button id="restartBtn" class="btn btn-accent">
+                        <i class="fas fa-redo"></i> Recommencer
+                    </button>
+                    <button id="changeThemeBtn" class="btn btn-secondary">
+                        <i class="fas fa-exchange-alt"></i> Changer de thème
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
