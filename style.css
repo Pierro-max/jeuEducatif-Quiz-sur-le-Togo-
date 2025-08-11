@@ -11,7 +11,7 @@
             --accent: #ff9800;
             --dark: #333;
             --light: #f5f5f5;
-            --danger: #f44336;
+            --danger: #d53d32;
             --success: #4caf50;
             --card-bg: #ffffff;
             --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
         .container {
             max-width: 900px;
             width: 100%;
-            background-color: rgba(207, 13, 13, 0.95);
+            background-color: rgba(227, 220, 220, 0.95);
             border-radius: 20px;
             box-shadow: var(--shadow);
             overflow: hidden;
@@ -59,8 +59,10 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            display: flex;
-            gap: 5px;
+            border: 2PX solid white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
         }
 
         .flag-stripe {
