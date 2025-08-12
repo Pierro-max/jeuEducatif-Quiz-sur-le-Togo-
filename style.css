@@ -28,7 +28,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             width: 100%;
             background-color: rgba(227, 220, 220, 0.95);
             border-radius: 20px;
@@ -38,9 +38,9 @@
         }
 
         header {
-            background: linear-gradient(to right, #c7cfcf, #c52828);
-            color: rgb(26, 23, 23);
-            padding: 20px;
+            background: linear-gradient(90deg, #0066b2, #e9a209);
+            color: white;
+            padding: 25px;
             text-align: center;
             position: relative;
         }
@@ -54,28 +54,6 @@
             font-size: 1.2rem;
             opacity: 0.9;
         }
-
-        .flag-container {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            border: 2PX solid white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .flag-stripe {
-            width: 25px;
-            height: 50px;
-        }
-
-        .flag-stripe:nth-child(1) { background-color: #ffce00; }
-        .flag-stripe:nth-child(2) { background-color: #118600; }
-        .flag-stripe:nth-child(3) { background-color: #d21034; }
-        .flag-stripe:nth-child(4) { background-color: #118600; }
-        .flag-stripe:nth-child(5) { background-color: #ffce00; }
-
         .screen {
             padding: 30px;
             display: none;
